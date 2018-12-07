@@ -59,7 +59,7 @@ def train(training_set, encoder, decoder, encoder_optimizer, decoder_optimizer, 
     encoder_optimizer.step()
     decoder_optimizer.step()
         
-    return loss / len(training_sets)
+    return loss / len(training_set)
         
 # Compute the loss on the development set
 # Inputs:
@@ -245,16 +245,24 @@ def trainIters_tpr(train_data, dev_data, tpr_encoder, n_epochs, print_every=1000
     # Format the data
     train_data = batchify_tpr(train_data, batch_size)
 
-    train_ex = train_data[0]
-    
-    training_sets = [(Variable(torch.LongTensor([item[0] for item in batch])).cuda(), 
-                     Variable(torch.LongTensor([item[1] for item in batch])).cuda(),
-                     torch.cat([item[2].unsqueeze(0).unsqueeze(0) for item in batch], 1)) for batch in train_data]
-
     dev_data = batchify_tpr(dev_data, batch_size)
-    dev_data_sets = [(Variable(torch.LongTensor([item[0] for item in batch])).cuda(),
-                     Variable(torch.LongTensor([item[1] for item in batch])).cuda(),
-                     torch.cat([item[2].unsqueeze(0).unsqueeze(0) for item in batch], 1)) for batch in dev_data]
+   
+    if use_cuda: 
+        training_sets = [(Variable(torch.LongTensor([item[0] for item in batch])).cuda(), 
+                         Variable(torch.LongTensor([item[1] for item in batch])).cuda(),
+                         torch.cat([item[2].unsqueeze(0).unsqueeze(0) for item in batch], 1)) for batch in train_data]
+
+        dev_data_sets = [(Variable(torch.LongTensor([item[0] for item in batch])).cuda(),
+                         Variable(torch.LongTensor([item[1] for item in batch])).cuda(),
+                         torch.cat([item[2].unsqueeze(0).unsqueeze(0) for item in batch], 1)) for batch in dev_data]
+    else:
+        training_sets = [(Variable(torch.LongTensor([item[0] for item in batch])), 
+                         Variable(torch.LongTensor([item[1] for item in batch])),
+                         torch.cat([item[2].unsqueeze(0).unsqueeze(0) for item in batch], 1)) for batch in train_data]
+
+        dev_data_sets = [(Variable(torch.LongTensor([item[0] for item in batch])),
+                         Variable(torch.LongTensor([item[1] for item in batch])),
+                         torch.cat([item[2].unsqueeze(0).unsqueeze(0) for item in batch], 1)) for batch in dev_data]
     
     # Conduct the desired number of training examples
     for epoch in range(n_epochs):

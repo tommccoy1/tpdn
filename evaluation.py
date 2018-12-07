@@ -24,6 +24,8 @@ from role_assignment_functions import *
 
 # Functions for evaluating seq2seq models and TPDNs
 
+use_cuda = torch.cuda.is_available()
+
 # Given an encoder, a decoder, and an input, return the guessed output
 # and the encoding of the input
 def evaluate(encoder1, decoder1, example, input_to_output):
@@ -65,8 +67,11 @@ def score(encoder1, decoder1, evaluation_set, input_to_output):
 # of digits as inputs. It then uses the tensor product encoder to encode the sequence and uses
 # the standard decoder to decode it, and returns the result.
 def evaluate2(encoder, decoder, example):
-    
-    encoder_hidden = encoder(Variable(torch.LongTensor(example[0])).cuda().unsqueeze(0), Variable(torch.LongTensor(example[1])).cuda().unsqueeze(0))
+   
+    if use_cuda:
+        encoder_hidden = encoder(Variable(torch.LongTensor(example[0])).cuda().unsqueeze(0), Variable(torch.LongTensor(example[1])).cuda().unsqueeze(0))
+    else:
+        encoder_hidden = encoder(Variable(torch.LongTensor(example[0])).unsqueeze(0), Variable(torch.LongTensor(example[1])).unsqueeze(0))
     predictions = decoder(encoder_hidden, len(example[0]), [parse_digits(example[0])])
         
     guessed_seq = []

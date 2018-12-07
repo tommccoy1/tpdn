@@ -104,7 +104,10 @@ max_length = 0
 train_file = open("data/" + args.data_prefix + ".data_from_train", "r")
 for line in train_file:
 	sequence, vector = line.strip().split("\t")
-	unindexed_train.append(([value for value in sequence.split()], Variable(torch.FloatTensor(np.array([float(value) for value in vector.split()]))).cuda()))
+	if use_cuda:
+		unindexed_train.append(([value for value in sequence.split()], Variable(torch.FloatTensor(np.array([float(value) for value in vector.split()]))).cuda()))
+	else:
+		unindexed_train.append(([value for value in sequence.split()], Variable(torch.FloatTensor(np.array([float(value) for value in vector.split()])))))
 
 	if len(sequence.split()) > max_length:
 		max_length = len(sequence.split())
@@ -119,7 +122,10 @@ for line in train_file:
 dev_file = open("data/" + args.data_prefix + ".data_from_dev", "r")
 for line in dev_file:
 	sequence, vector = line.strip().split("\t")
-	unindexed_dev.append(([value for value in sequence.split()], Variable(torch.FloatTensor(np.array([float(value) for value in vector.split()]))).cuda()))
+	if use_cuda:
+		unindexed_dev.append(([value for value in sequence.split()], Variable(torch.FloatTensor(np.array([float(value) for value in vector.split()]))).cuda()))
+	else:
+		unindexed_dev.append(([value for value in sequence.split()], Variable(torch.FloatTensor(np.array([float(value) for value in vector.split()])))))
 
 	if len(sequence.split()) > max_length:
 		max_length = len(sequence.split())
@@ -134,8 +140,12 @@ for line in dev_file:
 test_file = open("data/" + args.data_prefix + ".data_from_test", "r")
 for line in test_file:
 	sequence, vector = line.strip().split("\t")
-	unindexed_test.append(([value for value in sequence.split()], Variable(torch.FloatTensor(np.array([float(value) for value in vector.split()]))).cuda()))
-	
+
+	if use_cuda:
+		unindexed_test.append(([value for value in sequence.split()], Variable(torch.FloatTensor(np.array([float(value) for value in vector.split()]))).cuda()))
+	else:
+		unindexed_test.append(([value for value in sequence.split()], Variable(torch.FloatTensor(np.array([float(value) for value in vector.split()])))))
+
 	if len(sequence.split()) > max_length:
 		max_length = len(sequence.split())
 
@@ -380,9 +390,16 @@ total_mse = 0
 # Prepare test data
 all_test_data_orig = all_test_data
 all_test_data = batchify_tpr(all_test_data, 1)
-test_data_sets = [(Variable(torch.LongTensor([item[0] for item in batch])).cuda(),
-                   Variable(torch.LongTensor([item[1] for item in batch])).cuda(),
-                   torch.cat([item[2].unsqueeze(0).unsqueeze(0) for item in batch], 1)) for batch in all_test_data]
+
+if use_cuda:
+    test_data_sets = [(Variable(torch.LongTensor([item[0] for item in batch])).cuda(),
+                       Variable(torch.LongTensor([item[1] for item in batch])).cuda(),
+                       torch.cat([item[2].unsqueeze(0).unsqueeze(0) for item in batch], 1)) for batch in all_test_data]
+else:
+    test_data_sets = [(Variable(torch.LongTensor([item[0] for item in batch])),
+                       Variable(torch.LongTensor([item[1] for item in batch])),
+                       torch.cat([item[2].unsqueeze(0).unsqueeze(0) for item in batch], 1)) for batch in all_test_data]
+
 
 neighbor_counter = 0
 neighbor_total_rank = 0
