@@ -1,0 +1,295 @@
+
+#arch_chart_container {
+	width: 550px;
+	border-style: solid;
+	margin: auto;
+
+}
+
+svg > g:last-child > g:last-child { pointer-events: none }
+div.google-visualization-tooltip { pointer-events: none }
+
+#triple_chart_holder {
+	position: relative;
+	height: 300px;
+}
+
+#three_charts {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 400px;
+}
+
+#arch_legend {
+	position: absolute;
+	top: 20px;
+	left: 420px;
+	width: 100px;
+}
+
+#double_buttons {
+	width: 340px;
+	margin: auto;
+	height: 60px;
+}
+
+#enc_dec_buttons, #dec_enc_buttons {
+	width: 160px;
+	margin: auto;
+	float: left;
+}
+
+#all_tasks {
+	width: 610px;
+	margin: auto;
+}
+
+.task_display {
+	width: 50px;
+	margin: auto;
+}
+
+.task {
+	border-style: solid;
+	border-width: 1px;
+	float: left;
+	width: 150px;
+}
+
+#chart_box, #chart_box_2 {
+	width: 650px;
+	margin: auto;
+	border-style: solid;
+	padding: 5px;
+}
+
+#chart_title {
+	width: 650px;
+	margin: auto;
+	text-align: center;
+}
+
+#chart_div_2 {
+	width: 650px;
+	margin: auto;
+}
+
+#tpdn_box {
+	width: 700px;
+	margin: auto;
+}
+
+#analogy_eq {
+	width: 300px;
+	margin: auto;
+}
+
+#pred_table {
+	width: 260px;
+	margin: auto;
+}
+
+#analogy_holder {
+	width: 360px;
+	margin: auto;
+	border-style: solid;
+}
+
+.eq_table {
+	width: 550px;
+	margin: auto;
+}
+
+.eq_table th, .eq_table td {
+	padding: 0px 0px;
+}
+
+.binding {
+	/*background: #C5E1A5;*/
+}
+
+.filler {
+	/*background: #B6E4F9; #ACB428;*/
+	background: #FDE541; /*#F5F88A;*/
+	/*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+}
+
+.role {
+	/*background: #F5F88A; #3048E3;*/
+	background: #B3E5FC;
+}
+
+#hyp_box {
+	width: 85px;
+	float: left;
+}
+
+#hyp_text {
+	float: left;
+	width: 500px;
+}
+
+.inset {
+	width: 585px;
+	margin: auto;
+	padding: 10px;
+	border-style: solid;
+	border-radius: 10px;
+	height: 40px;
+}
+
+.eq {
+	text-align: center;
+}
+
+#rnn_holder {
+	width: 620px;
+	margin: auto;
+}
+
+.step {
+	height: 50px;
+	float: left;
+	width: 300px;
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#tpdn_diagram {
+	height: 312px;
+	width: 720px;
+	position: relative;
+	border-style: solid;
+	border-width: 1px;
+	margin: auto;
+}
+
+#steps {
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.imgb {
+	position: absolute;
+	top: 0;
+	left: 300px;
+}
+
+.tree_digit {
+	width: 50px;
+	float: left;
+	height: 30px;
+	vertical-align: top;
+}
+
+
+.square {
+	height: 12px;
+	width: 6px;
+	background-color: blue;
+	float: left;
+	opacity: 1.0;
+}
+
+
+.rect {
+	height: 12px;
+	width: 6px;
+	background-color: blue;
+	float: left;
+	opacity: 1.0;
+	position: relative;
+	top: 5px;
+}
+
+
+.rnn_arrow_2 {
+	float: left;
+	width: 100px;
+}
+
+
+.rnn_arrow {
+	position: relative;
+	float: left;
+	top: 5px;
+	width: 60px;
+}
+
+.seq_input_form {
+	width: 70px;
+	float: left;
+}
+
+
+.seq_class {
+	width: 70px;
+	float: left;
+}
+
+#rnn_input, #rnn_input_2, #tpdn_input_2 {
+	float: left;
+	text-align: right;
+}
+
+#rnn_output {
+	text-align: left;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+}
+
+#task_btn {
+	font-size: 12px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
