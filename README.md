@@ -91,5 +91,5 @@ python decompose.py --data_prefix ltr_ltr_auto_0 --role_scheme ltr --filler_dim 
 
 If you make use of this code, please cite the following:
 
-
+*Questions? Comments? Email [mailto:tom.mccoy@jhu.edu](tom.mccoy@jhu.edu).*
 
