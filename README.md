@@ -1,6 +1,6 @@
 # tpdn
 
-This repository provides the code for training a Tensor Product Decomposition Network (TPDN). TPDNs were introduced in [this paper]() by [Tom McCoy](https://tommccoy1.github.io/), [Tal Linzen](http://tallinzen.net/), [Ewan Dunbar](http://www.linguist.univ-paris-diderot.fr/~edunbar/), and [Paul Smolensky](https://www.microsoft.com/en-us/research/people/psmo/), and there is an interactive demo available [here](https://tommccoy1.github.io/tpdn/tpr_demo.html).
+This repository provides the code for training a Tensor Product Decomposition Network (TPDN). TPDNs were introduced in [this paper](https://openreview.net/forum?id=BJx0sjC5FX&noteId=r1e9w1OfgE) by [Tom McCoy](https://tommccoy1.github.io/), [Tal Linzen](http://tallinzen.net/), [Ewan Dunbar](http://www.linguist.univ-paris-diderot.fr/~edunbar/), and [Paul Smolensky](https://www.microsoft.com/en-us/research/people/psmo/), and there is an interactive demo available [here](https://tommccoy1.github.io/tpdn/tpr_demo.html).
 
 
 ## Quick start
