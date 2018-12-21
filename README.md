@@ -89,7 +89,9 @@ python decompose.py --data_prefix ltr_ltr_auto_0 --role_scheme ltr --filler_dim 
 
 ## Citation
 
-If you make use of this code, please cite the following:
+If you make use of this code, please cite the following ([bibtex](https://tommccoy1.github.io/tpdn/tpdn.html)):
+
+R. Thomas McCoy, Tal Linzen, Ewan Dunbar, and Paul Smolensky.  RNNs implicitly implement tensor-product representations.  In *International Conference on Learning Representations*, 2019. URL https://openreview.net/forum?id=BJx0sjC5FX.
 
 *Questions? Comments? Email [tom.mccoy@jhu.edu](mailto:tom.mccoy@jhu.edu).*
 

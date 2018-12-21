@@ -1,6 +1,11 @@
 
-.tab { margin-left: 40px; }
 
-p { margin : 0; }
+
+pre, xmp, plaintext, listing {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+}
 
 
