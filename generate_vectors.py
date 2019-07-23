@@ -28,6 +28,7 @@ from training import *
 from models import *
 from evaluation import *
 from role_assignment_functions import *
+from print_read_functions import *
 
 
 # Given a trained model, generate encodings for sequences from that model
@@ -40,25 +41,35 @@ parser.add_argument("--task", help="training task", type=str, default="auto")
 parser.add_argument("--vocab_size", help="vocab size for the training language", type=int, default=10)
 parser.add_argument("--emb_size", help="embedding size", type=int, default=10)
 parser.add_argument("--hidden_size", help="hidden size", type=int, default=60)
-parser.add_argument("--model_prefix", help="prefix for the trained model", type=str, default=None)
+parser.add_argument("--enc_prefix", help="prefix for the trained encoder", type=str, default=None)
+parser.add_argument("--dec_prefix", help="prefix for the trained decoder", type=str, default=None)
+parser.add_argument("--n_hidden_enc", help="number of hidden layers for an MLP encoder", type=int, default=None)
+parser.add_argument("--n_hidden_dec", help="number of hidden layers for an MLP decoder", type=int, default=None)
+parser.add_argument("--enc_role_scheme", help="role scheme for a TPR encoder", type=str, default=None)
+parser.add_argument("--dec_role_scheme", help="role scheme for a TPR decoder", type=str, default=None)
+parser.add_argument("--max_length", help="maximum length of a sequence", type=int, default=6)
 args = parser.parse_args()
 
+if torch.cuda.is_available():
+    device = torch.device('cuda')
+    thisdev = 'cuda'
+else:
+    device = torch.device('cpu')
+    thisdev = 'cpu'
 
-use_cuda = torch.cuda.is_available()
 
+fi_train = open('data/' + args.prefix + '.train', 'r')
+fi_dev = open('data/' + args.prefix + '.dev', 'r')
+fi_test = open('data/' + args.prefix + '.test', 'r')
 
-# Load data
-with open('data/' + args.prefix + '.train.pkl', 'rb') as handle:
-    train_set = pickle.load(handle)
-
-with open('data/' + args.prefix + '.dev.pkl', 'rb') as handle:
-    dev_set = pickle.load(handle)
-
-with open('data/' + args.prefix + '.test.pkl', 'rb') as handle:
-    test_set = pickle.load(handle)
+# Load the data sets
+train_set = file_to_lists(fi_train)
+dev_set = file_to_lists(fi_dev)
+test_set = file_to_lists(fi_test)
 
 input_to_output = lambda sequence: transform(sequence, args.task)
 
+layers_prefix = ""
 # Load the models
 if args.encoder == "ltr":
         encoder = EncoderRNN(args.vocab_size, args.emb_size, args.hidden_size)
@@ -66,64 +77,99 @@ elif args.encoder == "bi":
         encoder = EncoderBiRNN(args.vocab_size, args.emb_size, args.hidden_size)
 elif args.encoder == "tree":
         encoder = EncoderTreeRNN(args.vocab_size, args.emb_size, args.hidden_size)
+elif args.encoder == "mlp":
+        encoder = MLPEncoder(args.hidden_size,args.hidden_size,args.n_hidden_enc,args.hidden_size)
+        layers_prefix = str(args.n_hidden_enc) + "enclayers_" + layers_prefix
+elif args.encoder == "tpr":
+	encoder = TensorProductEncoder(n_fillers=args.vocab_size, filler_dim=args.emb_size, role_dim=args.emb_size, final_layer_width=args.hidden_size, role_scheme=args.enc_role_scheme, max_length=args.max_length)
 else:
         print("Invalid encoder type")
 
+parsing_fn = lambda x: None
+role_fn = lambda x: None
 if args.decoder == "ltr":
         decoder = DecoderRNN(args.vocab_size, args.emb_size, args.hidden_size)
 elif args.decoder == "bi":
 	decoder = DecoderBiRNN(args.vocab_size, args.emb_size, args.hidden_size)
 elif args.decoder == "tree":
         decoder = DecoderTreeRNN(args.vocab_size, args.emb_size, args.hidden_size)
+        parsing_fn = lambda x: [parse_digits(elt) for elt in x]	
+elif args.decoder == "mlp":
+	# This is a dummy decoder
+        decoder = MLPDecoder(args.hidden_size,args.hidden_size,args.n_hidden_dec,args.hidden_size)
+        layers_prefix = str(args.n_hidden_dec) + "declayers_" + layers_prefix
+elif args.decoder == "tpr":
+	n_r, role_fn_a = create_role_scheme(args.dec_role_scheme, args.max_length, args.vocab_size)
+	role_fn = lambda x: [role_fn_a(elt) for elt in x]
+	decoder = TensorProductDecoder(n_roles=n_r, n_fillers=args.vocab_size, filler_dim=args.emb_size, role_dim=args.emb_size, final_layer_width=args.hidden_size)
 else:
         print("Invalid decoder type")
 
-if use_cuda:
-        encoder = encoder.cuda()
-        decoder = decoder.cuda()
+encoder = encoder.to(device=device)
+decoder = decoder.to(device=device)
 
-encoder.load_state_dict(torch.load("models/encoder_" + args.model_prefix + ".weights"))
-decoder.load_state_dict(torch.load("models/decoder_" + args.model_prefix + ".weights"))
+print(torch.cuda.is_available())
+print(device)
+print(thisdev)
+
+encoder.load_state_dict(torch.load("models/encoder_" + args.enc_prefix + ".weights", map_location=thisdev))
+decoder.load_state_dict(torch.load("models/decoder_" + args.dec_prefix + ".weights", map_location=thisdev))
+
+# Save all encodings to a file
+fo_train = open("data/" + args.enc_prefix + ".data_from_train", "w")
+fo_dev = open("data/" + args.enc_prefix + ".data_from_dev", "w")
+fo_test = open("data/" + args.enc_prefix + ".data_from_test", "w")
 
 
 # To be populated with 2-tuples of the form (sequence, encoding), where each
 # sequence is drawn from the test set
-data_from_test = []
 accurate = 0
 total = 0
 
-# This loop populates the data_from_test list
+# This loop populates the data_from_tes list
 # It also records performance on the test set 
 # and prints any incorrect predictions
 for example in test_set:
-	pred, encoding = evaluate(encoder, decoder, example, input_to_output)
-	data_from_test.append((example, encoding))
-                 
+	pred, encoding = evaluate(encoder, decoder, example, input_to_output, parsing_fn, role_fn)
+ 
+	sequence = [str(x) for x in example]
+	enc = [str(x) for x in encoding.data.cpu().numpy()[0][0]]
+
+	fo_test.write(" ".join(sequence) + "\t" + " ".join(enc) + "\n")
+
+                
 	if tuple(input_to_output(example)) == tuple(pred):
 		accurate += 1
 	else:
 		# For each incorrect prediction, predict that input and
 		# the incorrect predicted output
-		#print(example, tuple(pred))
+		#print(example, input_to_output(example), tuple(pred))
 		pass
 	total += 1
-        
-print(args.model_prefix, "test_acc", accurate, total)
+
+#corrcount, totalcount = score(encoder, decoder, test_set, input_to_output)
+#print(corrcount, totalcount) 
+print(args.enc_prefix, args.dec_prefix, "test_acc", accurate, total)
 
 # To be populated with 2-tuples of the form (sequence, encoding), where each
 # sequence is drawn from the test set
-data_from_dev = []
 
 accurate = 0
 total = 0
 
-# This loop populates the data_from_test list.
+# This loop populates the ata_from_test list.
 # It also records performance on the test set 
 # and prints any incorrect predictions
 for example in dev_set:
-	pred, encoding = evaluate(encoder, decoder, example, input_to_output)
-	data_from_dev.append((example, encoding))
-                 
+	pred, encoding = evaluate(encoder, decoder, example, input_to_output, parsing_fn, role_fn)
+ 
+
+	sequence = [str(x) for x in example]
+	enc = [str(x) for x in encoding.data.cpu().numpy()[0][0]]
+
+	fo_dev.write(" ".join(sequence) + "\t" + " ".join(enc) + "\n")
+
+                
 	if tuple(input_to_output(example)) == tuple(pred):
 		accurate += 1
 	else:
@@ -133,22 +179,26 @@ for example in dev_set:
 		pass
 	total += 1
         
-print(args.model_prefix, "dev_acc", accurate, total)
+print(args.enc_prefix, args.dec_prefix, "dev_acc", accurate, total)
 
 # To be populated with 2-tuples of the form (sequence, encoding), where each
 # sequence is drawn from the test set
-data_from_train = []
 
 accurate = 0
 total = 0
 
-# This loop populates the data_from_test list.
+# This loop populates the ata_from_test list.
 # It also records performance on the test set 
 # and prints any incorrect predictions
 for example in train_set:
-	pred, encoding = evaluate(encoder, decoder, example, input_to_output)
-	data_from_train.append((example, encoding))
-                 
+	pred, encoding = evaluate(encoder, decoder, example, input_to_output, parsing_fn, role_fn)
+
+	sequence = [str(x) for x in example]
+	enc = [str(x) for x in encoding.data.cpu().numpy()[0][0]]
+
+	fo_train.write(" ".join(sequence) + "\t" + " ".join(enc) + "\n")
+
+
 	if tuple(input_to_output(example)) == tuple(pred):
 		accurate += 1
 	else:
@@ -158,44 +208,7 @@ for example in train_set:
 		pass
 	total += 1
         
-print(args.model_prefix, "train_acc", accurate, total)
-
-# Save all encodings to a file
-fo_train = open("data/" + args.model_prefix + ".data_from_train", "w")
-fo_dev = open("data/" + args.model_prefix + ".data_from_dev", "w")
-fo_test = open("data/" + args.model_prefix + ".data_from_test", "w")
-
-for training_item in data_from_train:
-	sequence = training_item[0]
-	encoding = training_item[1].data.cpu().numpy()[0][0]
-
-	sequence = [str(x) for x in sequence]
-	encoding = [str(x) for x in encoding]
-
-	fo_train.write(" ".join(sequence) + "\t" + " ".join(encoding) + "\n")
-
-for dev_item in data_from_dev:
-	sequence = dev_item[0]
-	encoding = dev_item[1].data.cpu().numpy()[0][0]
-
-	sequence = [str(x) for x in sequence]
-	encoding = [str(x) for x in encoding]
-
-	fo_dev.write(" ".join(sequence) + "\t" + " ".join(encoding) + "\n")
-
-
-for test_item in data_from_test:
-	sequence = test_item[0]
-	encoding = test_item[1].data.cpu().numpy()[0][0]
-
-	sequence = [str(x) for x in sequence]
-	encoding = [str(x) for x in encoding]
-
-	fo_test.write(" ".join(sequence) + "\t" + " ".join(encoding) + "\n")
-
-
-
-
+print(args.enc_prefix, args.dec_prefix, "train_acc", accurate, total)
 
 
 

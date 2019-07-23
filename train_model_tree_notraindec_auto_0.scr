@@ -1,0 +1,21 @@
+#!/bin/bash
+#SBATCH --job-name=MyJob
+#SBATCH --time=12:0:0
+#SBATCH --partition=gpuk80
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=2
+#SBATCH --mail-type=end
+#SBATCH --mail-user=rmccoy20@jhu.edu
+#SBATCH --output=notraindec_model_tree_tpr_auto_0.log
+#SBATCH --error=notraindec_model_tree_tpr_auto_0.err
+
+module load pytorch
+python model_trainer.py --encoder tpr --decoder tree --task auto --train_dec False --dec_file_prefix notrain_tree_tree_auto_0 --enc_role_scheme ltr
+python model_trainer.py --encoder tpr --decoder tree --task auto --train_dec False --dec_file_prefix notrain_tree_tree_auto_0 --enc_role_scheme rtl
+python model_trainer.py --encoder tpr --decoder tree --task auto --train_dec False --dec_file_prefix notrain_tree_tree_auto_0 --enc_role_scheme bi
+python model_trainer.py --encoder tpr --decoder tree --task auto --train_dec False --dec_file_prefix notrain_tree_tree_auto_0 --enc_role_scheme wickel
+python model_trainer.py --encoder tpr --decoder tree --task auto --train_dec False --dec_file_prefix notrain_tree_tree_auto_0 --enc_role_scheme bow
+python model_trainer.py --encoder tpr --decoder tree --task auto --train_dec False --dec_file_prefix notrain_tree_tree_auto_0 --enc_role_scheme tree
+python model_trainer.py --encoder tpr --decoder tree --task auto --train_dec False --dec_file_prefix notrain_tree_tree_auto_0 --enc_role_scheme treerev
+
+ 

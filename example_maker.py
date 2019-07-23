@@ -1,8 +1,9 @@
-import pickle
 import numpy as np
 from random import shuffle
 import sys
 import argparse
+
+from print_read_functions import *
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--max_seq_length", help="maximum sequence length", type=int, default=6)
@@ -46,13 +47,14 @@ def generate_examples(min_seq_length, max_seq_length, vocab_size, num_train, num
 
 train_set, dev_set, test_set = generate_examples(args.min_seq_length, args.max_seq_length, args.vocab_size, args.num_train, args.num_dev, args.num_test)
 
-with open('data/' + args.prefix + '.train.pkl', 'wb') as handle:
-    pickle.dump(train_set, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-with open('data/' + args.prefix + '.dev.pkl', 'wb') as handle:
-    pickle.dump(dev_set, handle, protocol=pickle.HIGHEST_PROTOCOL)
+fo_train = open('data/' + args.prefix + '.train', 'w')
+fo_dev = open('data/' + args.prefix + '.dev', 'w')
+fo_test = open('data/' + args.prefix + '.test', 'w')
 
-with open('data/' + args.prefix + '.test.pkl', 'wb') as handle:
-    pickle.dump(test_set, handle, protocol=pickle.HIGHEST_PROTOCOL)
+lists_to_file(train_set, fo_train)
+lists_to_file(dev_set, fo_dev)
+lists_to_file(test_set, fo_test)
+
 
 

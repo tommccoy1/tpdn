@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name=MyJob
+#SBATCH --time=12:0:0
+#SBATCH --partition=gpuk80
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=2
+#SBATCH --mail-type=end
+#SBATCH --mail-user=rmccoy20@jhu.edu
+#SBATCH --output=train_model_ltr_rev.log
+#SBATCH --error=train_model_ltr_rev.err
+
+module load pytorch
+python model_trainer.py --encoder ltr --decoder ltr --task rev
+python model_trainer.py --encoder ltr --decoder ltr --task rev
+python model_trainer.py --encoder ltr --decoder ltr --task rev
+python model_trainer.py --encoder ltr --decoder ltr --task rev
+python model_trainer.py --encoder ltr --decoder ltr --task rev
+python generate_vectors.py --encoder ltr --decoder ltr --task rev --enc_prefix ltr_ltr_rev_0 --dec_prefix ltr_ltr_rev_0
+python generate_vectors.py --encoder ltr --decoder ltr --task rev --enc_prefix ltr_ltr_rev_1 --dec_prefix ltr_ltr_rev_1
+python generate_vectors.py --encoder ltr --decoder ltr --task rev --enc_prefix ltr_ltr_rev_2 --dec_prefix ltr_ltr_rev_2
+python generate_vectors.py --encoder ltr --decoder ltr --task rev --enc_prefix ltr_ltr_rev_3 --dec_prefix ltr_ltr_rev_3
+python generate_vectors.py --encoder ltr --decoder ltr --task rev --enc_prefix ltr_ltr_rev_4 --dec_prefix ltr_ltr_rev_4

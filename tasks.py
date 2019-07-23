@@ -35,6 +35,8 @@ def transform(sequence, task):
         return sequence[::-1]
     if task == "sort":
         return sorted(sequence)
+    if task == "sortd":
+        return sorted(sequence)[::-1]
     if task == "interleave":
         return interleaved(sequence)
 

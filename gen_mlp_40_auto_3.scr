@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --job-name=MyJob
+#SBATCH --time=2:0:0
+#SBATCH --partition=gpuk80
+#SBATCH --gres=gpu:1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=6
+#SBATCH --mail-type=end
+#SBATCH --mail-user=rmccoy20@jhu.edu
+#SBATCH --output=gen_mlp_40_auto_3.log
+#SBATCH --error=gen_mlp_40_auto_3.err
+
+module load pytorch
+module load cuda
+
+python generate_vectors.py --prefix digits_9 --encoder mlp --decoder mlp --task auto --enc_prefix 0declayers_4enclayers_mlp_mlp_auto_3 --dec_prefix 0declayers_4enclayers_mlp_mlp_auto_3 --n_hidden_enc 4 --n_hidden_dec 0

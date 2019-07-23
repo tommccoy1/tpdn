@@ -1,0 +1,35 @@
+no squeeze
+no squeeze
+no squeeze
+no squeeze
+no squeeze
+no squeeze
+no squeeze
+no squeeze
+no squeeze
+no squeeze
+no squeeze
+no squeeze
+tpr_tree_tpr_tree_auto_0 tpr_tree_tpr_tree_auto_0 test_acc 4907 5000
+tpr_tree_tpr_tree_auto_0 tpr_tree_tpr_tree_auto_0 dev_acc 4927 5000
+tpr_tree_tpr_tree_auto_0 tpr_tree_tpr_tree_auto_0 train_acc 39570 40000
+no squeeze
+no squeeze
+tpr_tree_tpr_tree_auto_1 tpr_tree_tpr_tree_auto_1 test_acc 4906 5000
+tpr_tree_tpr_tree_auto_1 tpr_tree_tpr_tree_auto_1 dev_acc 4912 5000
+tpr_tree_tpr_tree_auto_1 tpr_tree_tpr_tree_auto_1 train_acc 39449 40000
+no squeeze
+no squeeze
+tpr_tree_tpr_tree_auto_2 tpr_tree_tpr_tree_auto_2 test_acc 4940 5000
+tpr_tree_tpr_tree_auto_2 tpr_tree_tpr_tree_auto_2 dev_acc 4956 5000
+tpr_tree_tpr_tree_auto_2 tpr_tree_tpr_tree_auto_2 train_acc 39616 40000
+no squeeze
+no squeeze
+tpr_tree_tpr_tree_auto_3 tpr_tree_tpr_tree_auto_3 test_acc 4958 5000
+tpr_tree_tpr_tree_auto_3 tpr_tree_tpr_tree_auto_3 dev_acc 4952 5000
+tpr_tree_tpr_tree_auto_3 tpr_tree_tpr_tree_auto_3 train_acc 39835 40000
+no squeeze
+no squeeze
+tpr_tree_tpr_tree_auto_4 tpr_tree_tpr_tree_auto_4 test_acc 4897 5000
+tpr_tree_tpr_tree_auto_4 tpr_tree_tpr_tree_auto_4 dev_acc 4911 5000
+tpr_tree_tpr_tree_auto_4 tpr_tree_tpr_tree_auto_4 train_acc 39389 40000

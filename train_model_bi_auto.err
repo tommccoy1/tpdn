@@ -1,0 +1,30 @@
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:295: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:295: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:295: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:295: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:295: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:295: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:295: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:295: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:295: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:295: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities

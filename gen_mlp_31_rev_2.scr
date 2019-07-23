@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --job-name=MyJob
+#SBATCH --time=2:0:0
+#SBATCH --partition=gpuk80
+#SBATCH --gres=gpu:1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=6
+#SBATCH --mail-type=end
+#SBATCH --mail-user=rmccoy20@jhu.edu
+#SBATCH --output=gen_mlp_31_rev_2.log
+#SBATCH --error=gen_mlp_31_rev_2.err
+
+module load pytorch
+module load cuda
+
+python generate_vectors.py --prefix digits_9 --encoder mlp --decoder mlp --task rev --enc_prefix 1declayers_3enclayers_mlp_mlp_rev_2 --dec_prefix 1declayers_3enclayers_mlp_mlp_rev_2 --n_hidden_enc 3 --n_hidden_dec 1

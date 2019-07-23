@@ -1,0 +1,28 @@
+/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/functional.py:995: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/functional.py:995: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/functional.py:995: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/functional.py:995: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/functional.py:995: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/functional.py:995: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/functional.py:995: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:

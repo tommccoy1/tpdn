@@ -1,0 +1,108 @@
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_1.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_2.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_3.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_4.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_5.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_6.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_7.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_8.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_9.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_10.train'
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var6_1.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var6_2.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var6_3.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var6_4.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var6_5.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var6_6.train'
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:244: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  output = self.softmax(self.out(output[0])) # Pass the result through softmax to make it probabilities

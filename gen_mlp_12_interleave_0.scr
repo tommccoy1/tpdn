@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --job-name=MyJob
+#SBATCH --time=2:0:0
+#SBATCH --partition=gpuk80
+#SBATCH --gres=gpu:1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=6
+#SBATCH --mail-type=end
+#SBATCH --mail-user=rmccoy20@jhu.edu
+#SBATCH --output=gen_mlp_12_interleave_0.log
+#SBATCH --error=gen_mlp_12_interleave_0.err
+
+module load pytorch
+module load cuda
+
+python generate_vectors.py --prefix digits_9 --encoder mlp --decoder mlp --task interleave --enc_prefix 2declayers_1enclayers_mlp_mlp_interleave_0 --dec_prefix 2declayers_1enclayers_mlp_mlp_interleave_0 --n_hidden_enc 1 --n_hidden_dec 2

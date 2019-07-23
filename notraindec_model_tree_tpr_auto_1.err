@@ -1,0 +1,42 @@
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:339: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  words_out.append(nn.LogSoftmax()(self.word_out(elt).view(-1).unsqueeze(0)))
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:343: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  words_out[index] = torch.cat((words_out[index], nn.LogSoftmax()(self.word_out(elt).view(-1).unsqueeze(0))), 0)
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:339: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  words_out.append(nn.LogSoftmax()(self.word_out(elt).view(-1).unsqueeze(0)))
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:343: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  words_out[index] = torch.cat((words_out[index], nn.LogSoftmax()(self.word_out(elt).view(-1).unsqueeze(0))), 0)
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:339: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  words_out.append(nn.LogSoftmax()(self.word_out(elt).view(-1).unsqueeze(0)))
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:343: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  words_out[index] = torch.cat((words_out[index], nn.LogSoftmax()(self.word_out(elt).view(-1).unsqueeze(0))), 0)
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:339: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  words_out.append(nn.LogSoftmax()(self.word_out(elt).view(-1).unsqueeze(0)))
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:343: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  words_out[index] = torch.cat((words_out[index], nn.LogSoftmax()(self.word_out(elt).view(-1).unsqueeze(0))), 0)
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:339: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  words_out.append(nn.LogSoftmax()(self.word_out(elt).view(-1).unsqueeze(0)))
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:343: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  words_out[index] = torch.cat((words_out[index], nn.LogSoftmax()(self.word_out(elt).view(-1).unsqueeze(0))), 0)
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:339: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  words_out.append(nn.LogSoftmax()(self.word_out(elt).view(-1).unsqueeze(0)))
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:343: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  words_out[index] = torch.cat((words_out[index], nn.LogSoftmax()(self.word_out(elt).view(-1).unsqueeze(0))), 0)
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:339: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  words_out.append(nn.LogSoftmax()(self.word_out(elt).view(-1).unsqueeze(0)))
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/models.py:343: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  words_out[index] = torch.cat((words_out[index], nn.LogSoftmax()(self.word_out(elt).view(-1).unsqueeze(0))), 0)
+/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  if this_loss.data[0] < best_loss:

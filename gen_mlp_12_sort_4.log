@@ -1,0 +1,6 @@
+True
+cuda
+cuda
+2declayers_1enclayers_mlp_mlp_sort_4 2declayers_1enclayers_mlp_mlp_sort_4 test_acc 4987 5000
+2declayers_1enclayers_mlp_mlp_sort_4 2declayers_1enclayers_mlp_mlp_sort_4 dev_acc 4994 5000
+2declayers_1enclayers_mlp_mlp_sort_4 2declayers_1enclayers_mlp_mlp_sort_4 train_acc 39951 40000

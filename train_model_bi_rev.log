@@ -1,0 +1,15 @@
+bi_bi_rev_0 bi_bi_rev_0 test_acc 4914 5000
+bi_bi_rev_0 bi_bi_rev_0 dev_acc 4920 5000
+bi_bi_rev_0 bi_bi_rev_0 train_acc 39585 40000
+bi_bi_rev_1 bi_bi_rev_1 test_acc 4421 5000
+bi_bi_rev_1 bi_bi_rev_1 dev_acc 4461 5000
+bi_bi_rev_1 bi_bi_rev_1 train_acc 36004 40000
+bi_bi_rev_2 bi_bi_rev_2 test_acc 4498 5000
+bi_bi_rev_2 bi_bi_rev_2 dev_acc 4516 5000
+bi_bi_rev_2 bi_bi_rev_2 train_acc 36396 40000
+bi_bi_rev_3 bi_bi_rev_3 test_acc 4588 5000
+bi_bi_rev_3 bi_bi_rev_3 dev_acc 4572 5000
+bi_bi_rev_3 bi_bi_rev_3 train_acc 37145 40000
+bi_bi_rev_4 bi_bi_rev_4 test_acc 4353 5000
+bi_bi_rev_4 bi_bi_rev_4 dev_acc 4346 5000
+bi_bi_rev_4 bi_bi_rev_4 train_acc 35344 40000

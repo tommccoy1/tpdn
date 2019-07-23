@@ -1,0 +1,228 @@
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/serialization.py", line 356, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'models/encoder_fixed_10_withheld_100_ltr_ltr_auto_0.weights'

@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --job-name=MyJob
+#SBATCH --time=20:0:0
+#SBATCH --partition=gpuk80
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=2
+#SBATCH --mail-type=end
+#SBATCH --mail-user=rmccoy20@jhu.edu
+#SBATCH --output=train_model_tree_interleave.log
+#SBATCH --error=train_model_tree_interleave.err
+
+module load pytorch
+python generate_vectors.py --encoder tree --decoder tree --task interleave --enc_prefix tree_tree_interleave_0 --dec_prefix tree_tree_interleave_0

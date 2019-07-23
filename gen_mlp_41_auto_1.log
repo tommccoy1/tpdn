@@ -1,0 +1,6 @@
+True
+cuda
+cuda
+1declayers_4enclayers_mlp_mlp_auto_1 1declayers_4enclayers_mlp_mlp_auto_1 test_acc 4997 5000
+1declayers_4enclayers_mlp_mlp_auto_1 1declayers_4enclayers_mlp_mlp_auto_1 dev_acc 4997 5000
+1declayers_4enclayers_mlp_mlp_auto_1 1declayers_4enclayers_mlp_mlp_auto_1 train_acc 39985 40000

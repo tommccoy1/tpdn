@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name=MyJob
+#SBATCH --time=2:0:0
+#SBATCH --partition=gpuk80
+#SBATCH --gres=gpu:1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=6
+#SBATCH --mail-type=end
+#SBATCH --mail-user=rmccoy20@jhu.edu
+#SBATCH --output=dectpbn_mlp_20_rev_4.log
+#SBATCH --error=dectpbn_mlp_20_rev_4.err
+#SBATCH --exclude=gpu008,gpu019,gpu037,gpu018
+
+module load pytorch
+module load cuda
+
+python decompose.py --data_prefix 0declayers_2enclayers_mlp_mlp_rev_4 --role_scheme ltr --test_decoder True --decoder mlp --decoder_prefix 0declayers_2enclayers_mlp_mlp_rev_4 --decoder_task rev --filler_dim 20 --role_dim 20  --n_hidden_dec 0 --decomp_type tpbn
+python decompose.py --data_prefix 0declayers_2enclayers_mlp_mlp_rev_4 --role_scheme rtl --test_decoder True --decoder mlp --decoder_prefix 0declayers_2enclayers_mlp_mlp_rev_4 --decoder_task rev --filler_dim 20 --role_dim 20  --n_hidden_dec 0 --decomp_type tpbn
+python decompose.py --data_prefix 0declayers_2enclayers_mlp_mlp_rev_4 --role_scheme bi --test_decoder True --decoder mlp --decoder_prefix 0declayers_2enclayers_mlp_mlp_rev_4 --decoder_task rev --filler_dim 20 --role_dim 20  --n_hidden_dec 0 --decomp_type tpbn
+python decompose.py --data_prefix 0declayers_2enclayers_mlp_mlp_rev_4 --role_scheme wickel --test_decoder True --decoder mlp --decoder_prefix 0declayers_2enclayers_mlp_mlp_rev_4 --decoder_task rev --filler_dim 20 --role_dim 20  --n_hidden_dec 0 --decomp_type tpbn
+python decompose.py --data_prefix 0declayers_2enclayers_mlp_mlp_rev_4 --role_scheme tree --test_decoder True --decoder mlp --decoder_prefix 0declayers_2enclayers_mlp_mlp_rev_4 --decoder_task rev --filler_dim 20 --role_dim 20  --n_hidden_dec 0 --decomp_type tpbn
+python decompose.py --data_prefix 0declayers_2enclayers_mlp_mlp_rev_4 --role_scheme bow --test_decoder True --decoder mlp --decoder_prefix 0declayers_2enclayers_mlp_mlp_rev_4 --decoder_task rev --filler_dim 20 --role_dim 20  --n_hidden_dec 0 --decomp_type tpbn

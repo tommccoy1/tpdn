@@ -1,0 +1,15 @@
+bi_bi_interleave_0 bi_bi_interleave_0 test_acc 4450 5000
+bi_bi_interleave_0 bi_bi_interleave_0 dev_acc 4465 5000
+bi_bi_interleave_0 bi_bi_interleave_0 train_acc 35982 40000
+bi_bi_interleave_1 bi_bi_interleave_1 test_acc 4157 5000
+bi_bi_interleave_1 bi_bi_interleave_1 dev_acc 4170 5000
+bi_bi_interleave_1 bi_bi_interleave_1 train_acc 33800 40000
+bi_bi_interleave_2 bi_bi_interleave_2 test_acc 4787 5000
+bi_bi_interleave_2 bi_bi_interleave_2 dev_acc 4813 5000
+bi_bi_interleave_2 bi_bi_interleave_2 train_acc 38757 40000
+bi_bi_interleave_3 bi_bi_interleave_3 test_acc 4470 5000
+bi_bi_interleave_3 bi_bi_interleave_3 dev_acc 4458 5000
+bi_bi_interleave_3 bi_bi_interleave_3 train_acc 36214 40000
+bi_bi_interleave_4 bi_bi_interleave_4 test_acc 4071 5000
+bi_bi_interleave_4 bi_bi_interleave_4 dev_acc 4023 5000
+bi_bi_interleave_4 bi_bi_interleave_4 train_acc 32904 40000

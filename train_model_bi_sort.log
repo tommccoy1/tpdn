@@ -1,0 +1,15 @@
+bi_bi_sort_0 bi_bi_sort_0 test_acc 5000 5000
+bi_bi_sort_0 bi_bi_sort_0 dev_acc 4998 5000
+bi_bi_sort_0 bi_bi_sort_0 train_acc 39999 40000
+bi_bi_sort_1 bi_bi_sort_1 test_acc 4998 5000
+bi_bi_sort_1 bi_bi_sort_1 dev_acc 4998 5000
+bi_bi_sort_1 bi_bi_sort_1 train_acc 39994 40000
+bi_bi_sort_2 bi_bi_sort_2 test_acc 4995 5000
+bi_bi_sort_2 bi_bi_sort_2 dev_acc 4998 5000
+bi_bi_sort_2 bi_bi_sort_2 train_acc 39994 40000
+bi_bi_sort_3 bi_bi_sort_3 test_acc 4999 5000
+bi_bi_sort_3 bi_bi_sort_3 dev_acc 4998 5000
+bi_bi_sort_3 bi_bi_sort_3 train_acc 39999 40000
+bi_bi_sort_4 bi_bi_sort_4 test_acc 4998 5000
+bi_bi_sort_4 bi_bi_sort_4 dev_acc 4997 5000
+bi_bi_sort_4 bi_bi_sort_4 train_acc 39990 40000

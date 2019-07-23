@@ -1,0 +1,320 @@
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_1.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_2.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_3.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_4.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_5.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_6.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_7.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_8.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_9.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 66, in <module>
+    fi_train = open('data/' + args.prefix + '.train', 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'data/digits_var10_10.train'
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+Traceback (most recent call last):
+  File "model_trainer.py", line 158, in <module>
+    encoder.load_state_dict(torch.load("models/encoder_" + args.enc_file_prefix + ".weights", map_location=device))
+  File "/software/apps/anaconda/5.2/python/3.6/envs/marcc-python3.6-pytorch0.4.1/lib/python3.5/site-packages/torch/nn/modules/module.py", line 719, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for EncoderRNN:
+	size mismatch for rnn.weight_ih_l0: copying a param of torch.Size([300, 10]) from checkpoint, where the shape is torch.Size([180, 10]) in current model.
+	size mismatch for rnn.weight_hh_l0: copying a param of torch.Size([300, 100]) from checkpoint, where the shape is torch.Size([180, 60]) in current model.
+	size mismatch for rnn.bias_ih_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.
+	size mismatch for rnn.bias_hh_l0: copying a param of torch.Size([300]) from checkpoint, where the shape is torch.Size([180]) in current model.

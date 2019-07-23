@@ -1,0 +1,6 @@
+True
+cuda
+cuda
+ltr_ltr_auto_0 ltr_ltr_auto_0 test_acc 5000 5000
+ltr_ltr_auto_0 ltr_ltr_auto_0 dev_acc 5000 5000
+ltr_ltr_auto_0 ltr_ltr_auto_0 train_acc 39994 40000

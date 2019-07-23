@@ -1,0 +1,18 @@
+#!/bin/bash
+#SBATCH --job-name=MyJob
+#SBATCH --time=12:0:0
+#SBATCH --partition=gpuk80
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=2
+#SBATCH --mail-type=end
+#SBATCH --mail-user=rmccoy20@jhu.edu
+#SBATCH --output=train_model_ltr_tpr_notrain_auto.log
+#SBATCH --error=train_model_ltr_tpr_notrain_auto.err
+
+module load pytorch
+python model_trainer.py --encoder ltr --decoder ltr --task sort --train_dec False --dec_file_prefix ltr_ltr_interleave_0
+python model_trainer.py --encoder ltr --decoder ltr --task sort --train_dec False --dec_file_prefix ltr_ltr_interleave_1
+python model_trainer.py --encoder ltr --decoder ltr --task sort --train_dec False --dec_file_prefix ltr_ltr_interleave_2
+python model_trainer.py --encoder ltr --decoder ltr --task sort --train_dec False --dec_file_prefix ltr_ltr_interleave_3
+python model_trainer.py --encoder ltr --decoder ltr --task sort --train_dec False --dec_file_prefix ltr_ltr_interleave_4
+
