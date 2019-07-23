@@ -1,6 +1,0 @@
-True
-cuda
-cuda
-2declayers_3enclayers_mlp_mlp_auto_0 2declayers_3enclayers_mlp_mlp_auto_0 test_acc 4999 5000
-2declayers_3enclayers_mlp_mlp_auto_0 2declayers_3enclayers_mlp_mlp_auto_0 dev_acc 5000 5000
-2declayers_3enclayers_mlp_mlp_auto_0 2declayers_3enclayers_mlp_mlp_auto_0 train_acc 39998 40000

@@ -1,7 +1,0 @@
-/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
-  if this_loss.data[0] < best_loss:
-/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
-  if this_loss.data[0] < best_loss:
-/scratch/users/rmccoy20@jhu.edu/tpdn_unbind/tpdn_refactored/training.py:158: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
-  if this_loss.data[0] < best_loss:
-slurmstepd: error: *** JOB 34714768 ON gpu007 CANCELLED AT 2019-06-06T04:59:03 ***

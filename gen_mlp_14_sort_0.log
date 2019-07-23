@@ -1,6 +1,0 @@
-True
-cuda
-cuda
-4declayers_1enclayers_mlp_mlp_sort_0 4declayers_1enclayers_mlp_mlp_sort_0 test_acc 4988 5000
-4declayers_1enclayers_mlp_mlp_sort_0 4declayers_1enclayers_mlp_mlp_sort_0 dev_acc 4993 5000
-4declayers_1enclayers_mlp_mlp_sort_0 4declayers_1enclayers_mlp_mlp_sort_0 train_acc 39923 40000

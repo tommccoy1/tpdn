@@ -1,6 +1,0 @@
-True
-cuda
-cuda
-4declayers_1enclayers_mlp_mlp_interleave_4 4declayers_1enclayers_mlp_mlp_interleave_4 test_acc 4995 5000
-4declayers_1enclayers_mlp_mlp_interleave_4 4declayers_1enclayers_mlp_mlp_interleave_4 dev_acc 4989 5000
-4declayers_1enclayers_mlp_mlp_interleave_4 4declayers_1enclayers_mlp_mlp_interleave_4 train_acc 39939 40000
