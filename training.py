@@ -230,7 +230,7 @@ def train_tpr(batch_set, tpr_encoder, tpr_optimizer, criterion):
 def trainIters_tpr(train_data, dev_data, tpr_encoder, n_epochs, print_every=1000, learning_rate=0.001, batch_size=5, weight_file=None, patience=10):
     # The amount of loss accumulated between print updates
     print_loss_total = 0
-    
+   
     # The optimization algorithm; could use SGD instead of Adam
     tpr_optimizer = optim.Adam(tpr_encoder.parameters(), lr=learning_rate)
    
@@ -263,15 +263,15 @@ def trainIters_tpr(train_data, dev_data, tpr_encoder, n_epochs, print_every=1000
         dev_data_sets = [(Variable(torch.LongTensor([item[0] for item in batch])),
                          Variable(torch.LongTensor([item[1] for item in batch])),
                          torch.cat([item[2].unsqueeze(0).unsqueeze(0) for item in batch], 1)) for batch in dev_data]
-    
+   
     # Conduct the desired number of training examples
     for epoch in range(n_epochs):
         improved_this_epoch = 0
 
         shuffle(training_sets)
 
-        for batch in range(len(training_sets)//batch_size):
-            batch_set = training_sets[batch * batch_size:(batch + 1)*batch_size]
+        for batch in range(len(training_sets)):
+            batch_set = [training_sets[batch]]
 
             loss = train_tpr(batch_set, tpr_encoder, tpr_optimizer, criterion)       
         

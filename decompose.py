@@ -380,7 +380,7 @@ if args.final_linear != "True":
 # Train the TPDN
 args.role_prefix = str(args.role_prefix).split("/")[-1]
 if args.train == "True":
-	end_loss = trainIters_tpr(all_train_data, all_dev_data, tpr_encoder, 100, print_every=1000//32, learning_rate = 0.001, weight_file="models/" + args.data_prefix + str(args.role_prefix) + str(args.role_scheme) + ".tpr", batch_size=32)
+        end_loss = trainIters_tpr(all_train_data, all_dev_data, tpr_encoder, 100, print_every=1000//32, learning_rate = 0.001, weight_file="models/" + args.data_prefix + str(args.role_prefix) + str(args.role_scheme) + ".tpr", batch_size=32)
 
 # Load the trained TPDn
 tpr_encoder.load_state_dict(torch.load("models/" + args.data_prefix + str(args.role_prefix) + str(args.role_scheme) + ".tpr"))
