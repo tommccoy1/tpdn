@@ -297,8 +297,6 @@ def trainIters_tpr(train_data, dev_data, tpr_encoder, n_epochs, print_every=1000
       
         if training_done:
             break        
-        if not improved_this_epoch:
-            break 
 
            
     return best_loss
