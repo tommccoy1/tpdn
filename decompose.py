@@ -59,6 +59,7 @@ parser.add_argument("--neighbor_analysis", help="whether to use a neighbor analy
 parser.add_argument("--digits", help="whether this is one of the digit task", type=str, default="True")
 parser.add_argument("--final_linear", help="whether to have a final linear layer", type=str, default="True")
 parser.add_argument("--embed_squeeze", help="original dimension to be squeezed to filler_dim", type=int, default=None)
+parser.add_argument("--batch_size", help="batch size", type=int, default=32)
 args = parser.parse_args()
 
 # Create the logfile
@@ -380,7 +381,7 @@ if args.final_linear != "True":
 # Train the TPDN
 args.role_prefix = str(args.role_prefix).split("/")[-1]
 if args.train == "True":
-        end_loss = trainIters_tpr(all_train_data, all_dev_data, tpr_encoder, 100, print_every=1000//32, learning_rate = 0.001, weight_file="models/" + args.data_prefix + str(args.role_prefix) + str(args.role_scheme) + ".tpr", batch_size=32)
+        end_loss = trainIters_tpr(all_train_data, all_dev_data, tpr_encoder, 100, print_every=1000//args.batch_size, learning_rate = 0.001, weight_file="models/" + args.data_prefix + str(args.role_prefix) + str(args.role_scheme) + ".tpr", batch_size=args.batch_size)
 
 # Load the trained TPDn
 tpr_encoder.load_state_dict(torch.load("models/" + args.data_prefix + str(args.role_prefix) + str(args.role_scheme) + ".tpr"))
